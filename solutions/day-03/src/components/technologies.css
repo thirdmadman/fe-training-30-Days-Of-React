@@ -1,0 +1,23 @@
+.technologies {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebebeb;
+}
+
+.technologies-title {
+  padding-bottom: 20px;
+  font-weight: 800;
+
+}
+
+.technologies-logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo-image {
+  display: flex;
+}

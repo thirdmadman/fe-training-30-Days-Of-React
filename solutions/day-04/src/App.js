@@ -1,4 +1,5 @@
 import './App.css';
+import { HexColorGenerator } from './components/HexColorGenerator';
 import { SubscribeForm } from './components/SubscribeForm';
 import { Technologies } from './components/Technologies';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       {<Technologies/>}
       {<SubscribeForm/>}
+      {<HexColorGenerator/>}
     </div>
   );
 }

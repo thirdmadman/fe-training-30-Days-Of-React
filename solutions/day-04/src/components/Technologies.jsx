@@ -32,7 +32,12 @@ export function Technologies() {
   return (
     <div className='technologies'>
       <p className='technologies-title'>Front end technologies</p>
-      <div className='technologies-logo-container'><Html />, <Css />, <Js />, <React /></div>
+      <div className='technologies-logo-container'>
+        <Html />
+        <Css />
+        <Js />
+        <React />
+      </div>
     </div>
   );
 }

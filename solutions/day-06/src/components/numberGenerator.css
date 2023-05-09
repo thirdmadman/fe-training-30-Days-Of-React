@@ -1,0 +1,36 @@
+.number-generator {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.number-generator__title {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.number-generator__numbers-container {
+}
+
+.numbers-container {
+  display: flex;
+  justify-content: left;
+  max-width: 800px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.numbers-container__number {
+  width: 98px;
+  height: 98px;
+  border: 1px solid #ffffff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+
+  color: #ffffff;
+}

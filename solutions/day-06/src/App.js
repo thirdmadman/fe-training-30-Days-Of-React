@@ -9,8 +9,9 @@ function App() {
     <div className='App'>
       <Technologies />
       <SubscribeForm title={{title: 'Subscribe', subtitle: 'Sign up with your email address to receive news and updates.'}} />
-      <HexColorGenerator numberOfPlates={5} />
+      <HexColorGenerator numberOfPlates={5} isPlates={false} />
       <NumberGenerator countOfNumbers={32}/>
+      <HexColorGenerator numberOfPlates={32} isPlates={true} />
     </div>
   );
 }

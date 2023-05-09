@@ -1,6 +1,15 @@
 .generator {
+  padding: 50px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.generator__title {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .generator__group {
@@ -11,11 +20,31 @@
   justify-content: center;
 }
 
-.generator__plate {
+.generator__group_plates {
+  display: flex;
+  justify-content: left;
+  max-width: 800px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.generator__line {
   margin-bottom: 10px;
   padding: 20px;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
+  color: #ffffff;
+}
+
+.generator__plate {
+  width: 98px;
+  height: 98px;
+  border: 1px solid #ffffff;
+  font-size: 17px;
+  text-align: center;
+  line-height: 100px;
+
   color: #ffffff;
 }

@@ -1,12 +1,13 @@
 import "./subscribeForm.css";
 
-export function SubscribeForm() {
+export function SubscribeForm(props) {
+  const {title, subtitle} = props.title;
   return (
     <div className='subscribe'>
       <div className='subscribe-form form'>
         <div className='form__text'>
-          <h1 className='form__title'>Subscribe</h1>
-          <p className='form__description'>Sign up with your email address to receive news and updates.</p>
+          <h1 className='form__title'>{title}</h1>
+          <p className='form__description'>{subtitle}</p>
         </div>
         <div className='form__inputs inputs-group'>
           <div className='inputs-group__inputs'>
@@ -15,7 +16,7 @@ export function SubscribeForm() {
             <input type='email' className='inputs-group__input' placeholder='Email' />
           </div>
           <div className='inputs-group__buttons'>
-            <button className='inputs-group__button'>Subscribe</button>
+            <button className='inputs-group__button'>{title}</button>
           </div>
         </div>
       </div>

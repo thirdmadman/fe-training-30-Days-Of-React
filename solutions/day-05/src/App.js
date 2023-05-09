@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {<Technologies/>}
-      {<SubscribeForm/>}
+      {<SubscribeForm title={{ title: 'Subscribe', subtitle: 'Sign up with your email address to receive news and updates.' }}/>}
       {<HexColorGenerator/>}
     </div>
   );

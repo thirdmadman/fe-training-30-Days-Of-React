@@ -1,6 +1,9 @@
 import './hexColorGenerator.css';
 
-export function HexColorGenerator() {
+export function HexColorGenerator(props) {
+
+  const numberOfPlates = props.numberOfPlates;
+
   const randomIntInRange = (minRange, maxRange) => {
     const min = Math.ceil(minRange);
     const max = Math.floor(maxRange);
@@ -20,10 +23,9 @@ export function HexColorGenerator() {
   const generatePlates = (numberOfPlates) => {
     let colorsArray = Array(numberOfPlates).fill(0);
     colorsArray = colorsArray.map(() => generateHexColor());
-    console.error(colorsArray);
 
     return colorsArray.map((color) => (
-      <div className='generator__plate' style={{backgroundColor: color}}>
+      <div className='generator__plate' style={{backgroundColor: color}} key={color}>
         {color}
       </div>
     ));
@@ -31,7 +33,7 @@ export function HexColorGenerator() {
 
   return (
     <div className='generator'>
-      <div className='generator__group'>{generatePlates(5)}</div>
+      <div className='generator__group'>{generatePlates(numberOfPlates)}</div>
     </div>
   );
 }
